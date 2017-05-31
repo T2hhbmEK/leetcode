@@ -28,14 +28,17 @@
 class Solution {
  public:
   vector<Interval> merge(vector<Interval>& intervals) {
+    vector<Interval> result;
     sort(intervals.begin(), intervals.end(),
          [](Interval a, Interval b) { return a.start < b.start; });
     for (auto pos = intervals.begin(); pos < intervals.end(); pos++) {
       while (pos < intervals.end() - 1 && pos->end >= (pos + 1)->start) {
         pos->end = pos->end > (pos + 1)->end ? pos->end : (pos + 1)->end;
-        intervals.erase(pos + 1);
+        swap(*pos, *(pos + 1));
+        pos++;
       }
+      result.push_back(*pos);
     }
-    return intervals;
+    return result;
   }
 };
