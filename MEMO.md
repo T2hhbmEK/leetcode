@@ -11,6 +11,7 @@
 - Test
   ```
   leetcode test 54.spiral-matrix.cpp
+  leetcode test 54.spiral-matrix.cpp -t "[[1]]" #custom testcase
   ```
 - Submit
   ```
