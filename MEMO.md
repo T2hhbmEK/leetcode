@@ -1,10 +1,10 @@
 # MEMO
-## commands
+## commands
 - Get the problem list (easy or medium, unlocked)
   ```
   leetcode list -q DHL
   ```
-- Get the problem file (description as comment)
+- Get the problem file (description as comment)
   ```
   leetcode show -g -x 54
   ```
