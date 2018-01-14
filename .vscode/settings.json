@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite default and user settings.
 {
   "C_Cpp.clang_format_style": "Google",
-  "C_Cpp.clang_format_formatOnSave": true,
+  "editor.formatOnSave": true,
   "files.associations": {
     "*.js": "javascriptreact",
     "__split_buffer": "cpp",
